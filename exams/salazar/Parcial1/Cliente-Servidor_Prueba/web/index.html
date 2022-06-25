@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Aplicación Cliente-Servidor</title>
+        <meta charset="UTF-8">
+        <link href="CSS/CssPage.css" rel="stylesheet" type="text/css"/>
+        <script src="JSPage/PageJSProyect.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="init();">
+        <div id="ContornoTabla">
+            <header>
+                Aplicación Arbol
+            </header>
+            <div id="contents">
+                <section id="divSolicitaDatos">
+                    <table id="TablaSoliDatos">
+                        <tr>
+                            <td>
+                                Nombre
+                            </td>
+                            <td>
+                                <input type="text" id="NombreArbol"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tipo
+                            </td>
+                            <td>
+                                <input type="text" id="TipoArbol"/>
+                            </td>
+                        </tr>
+                                <button onclick="GuardarDatos();">
+                                    Guardar
+                                </button>
+                            </td>
+                            <td>
+                                <button onclick="BorrarDatos();">
+                                    Borrar
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id = DatosEnPantalla>
+                    <table>
+                        <caption>
+                            Datos del Arbol
+                        </caption>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Nombre
+                                    </th>
+                                    <th>
+                                        Tipo
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="TablaMuestraDatos">
+                                
+                            </tbody>
+                    </table>
+                </section>
+            </div>
+            <footer>
+                Creado por Ismael Salazar
+            </footer>
+        </div>
+    </body>
+</html>

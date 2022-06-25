@@ -29,8 +29,8 @@ public class ProductDAO implements ProductCrud {
                 Product product = new Product();
                 product.setId(resultSet.getInt("id"));
                 product.setName(resultSet.getString("name"));
-                product.setPrice(resultSet.getFloat("type"));
-                product.setQuantity(resultSet.getInt("brand"));
+                product.setType(resultSet.getString("type"));
+                product.setBrand(resultSet.getString("brand"));
                 list.add(product);
             }
         } catch (Exception e) {
@@ -49,8 +49,8 @@ public class ProductDAO implements ProductCrud {
             while (resultSet.next()) {
                 product.setId(resultSet.getInt("id"));
                 product.setName(resultSet.getString("name"));
-                product.setPrice(resultSet.getFloat("type"));
-                product.setQuantity(resultSet.getInt("brand"));
+                product.setType(resultSet.getString("type"));
+                product.setBrand(resultSet.getString("brand"));
             }
         } catch (Exception e) {
             System.out.println("Error " + e);
@@ -79,35 +79,9 @@ public class ProductDAO implements ProductCrud {
         return false;
     }
 
-    @Override
-    public boolean updateProduct(Product product) {
-        String query = "UPDATE productos SET name='"
-                + product.getName() + "', price = '"
-                + product.getPrice() + "', quantity = '"
-                + product.getQuantity() + "', profit = "
-                + product.getProfit() + " WHERE id = " + product.getId();
-        try {
-            connection = connectionMongo.getConnection();
-            preparedStatement = connection.prepareStatement(query);
-            preparedStatement.executeUpdate();
-        } catch (Exception e) {
-            System.out.println("Error " + e);
-        }
-        return false;
-    }
+ 
 
-    @Override
-    public boolean deleteProduct(int id) {
-        String query = "DELETE FROM productos WHERE id = " + id;
-        try {
-            connection = connectionMongo.getConnection();
-            preparedStatement = connection.prepareStatement(query);
-            preparedStatement.executeUpdate();
-        } catch (Exception e) {
-            System.out.println("Error " + e);
-        }
-        return false;
-    }
+
 
 
 }

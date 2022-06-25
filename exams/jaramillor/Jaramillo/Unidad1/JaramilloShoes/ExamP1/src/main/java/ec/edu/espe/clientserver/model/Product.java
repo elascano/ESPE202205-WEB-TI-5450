@@ -1,25 +1,19 @@
 package ec.edu.espe.clientserver.model;
 
-/**
- *
- * @author Michael
- */
 public class Product {
 
     private int id;
     private String name;
-    private float price;
-    private int quantity;
-    private float profit;
+    private String type;
+    private String brand;
 
     public Product() {
     }
 
-    public Product(String name, float price, int quantity, float profit) {
+    public Product(String name, String type, String brand) {
         this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-        this.profit = profit;
+        this.type = type;
+        this.brand = brand;
     }
 
     public int getId() {
@@ -38,28 +32,22 @@ public class Product {
         this.name = name;
     }
 
-    public float getPrice() {
-        return price;
+    public String getType() {
+        return type;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
+    public void setType(String price) {
+        this.type = price;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public float getProfit() {
-        return profit;
-    }
 
-    public void setProfit(float profit) {
-        this.profit = profit;
-    }
 
 }

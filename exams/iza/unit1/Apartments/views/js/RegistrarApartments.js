@@ -1,10 +1,10 @@
-function registrarUsuario(){
+function registrar(){
     var id =$('#txtid').val();
     var descripcion=$('#txtdescripcion').val();
     var numero=$('#txtnumero').val();
     var localizacion =$('#txtlocalizacion ').val();
     
-    var url = "http://localhost/Apartments/controller/insertarApartaments.php"
+    var url = "http://localhost/ESPE202205-WEB-TI-5450/exams/iza/unit1/Apartments/controller/insertarApartaments.php"
 
 $.ajax({
     type:"POST",
