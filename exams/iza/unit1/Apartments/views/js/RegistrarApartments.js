@@ -1,4 +1,4 @@
-function registrarUsuario(){
+function registrar(){
     var id =$('#txtid').val();
     var descripcion=$('#txtdescripcion').val();
     var numero=$('#txtnumero').val();
