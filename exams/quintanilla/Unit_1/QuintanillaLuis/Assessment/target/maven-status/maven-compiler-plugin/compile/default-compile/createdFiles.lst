@@ -1,0 +1,5 @@
+com\mycompany\assessment\JakartaRestConfiguration.class
+com\mycompany\assessment\resources\JakartaEE8Resource.class
+ConnectionDB\ConnectionMongoDB.class
+Rest\VinylRecordsResource.class
+Model\VinylRecords.class
