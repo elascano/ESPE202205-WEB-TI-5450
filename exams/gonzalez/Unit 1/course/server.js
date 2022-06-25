@@ -10,10 +10,10 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 //http://localhost:8081/course/uri
-app.use("/Data", EndPoints)
+app.use("/course", EndPoints)
 
 mongoose.connect(
-    "mongodb+srv://admin:<password>@cluster0.vq19r.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://admin:admin@cluster0.vq19r.mongodb.net/?retryWrites=true&w=majority",
     {useNewUrlParser: true},
     (err, ans) => {
         err && console.log("Error al conectarse a la base de datos")
