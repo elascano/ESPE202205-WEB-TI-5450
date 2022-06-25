@@ -25,14 +25,12 @@ const addSport = (req, res) => {
         place: req.body.place,
         impact: req.body.impact
     });
-
-    sport.save((err. spt) => {
+    
+    sport.save((err, spt)=>{
         err && res.status(500).send(err.message);
 
         res.status(200).json(spt);
-
-    });
-    
+    });    
 };
 
-module.exports = {findAllSports, findById, addSport};
+module.exports = { findAllSports, findById, addSport };
