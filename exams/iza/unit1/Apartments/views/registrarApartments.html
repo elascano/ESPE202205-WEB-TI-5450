@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formulario de Registro</title>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/estilosLogin.css" type="text/css" media="all">
+        <script src="http://localhost/ESPE202205-WEB-TI-5450/exams/iza/unit1/Apartments/views/js/RegistrarUsuario.js"></script>
+    </head>
+    <body>
+        <div class="cuerpoFormulario1" id="cuerpoFormulario1"> 
+            <form class="formularioRegistro" id="formularioRegistro" >
+                
+                <h1>Formulario de Registro</h1><br>
+                <fieldset>            
+                    <legend>Datos</legend>   
+                <label>id:</label><br>
+                    <input type="text" class="txt" id="txtid" required="" name="txtid"><br>
+                <label>descripcion:</label><br>
+                     <input type="text" class="txt" id="txtdescripcion" required=""  name="txtdescripcion"><br>
+                <label>numero:</label><br>
+                    <input type="text" class="txt" id="txtnumero" required="" name="txtnumero"><br>  
+                <label>localizacion:</label> <br>
+                    <input type="text" class="txt" id="txtlocalizacion" required="" name="txtlocalizacion"><br>
+                </fieldset><br><br>                 
+                <button class="btn" onclick="registrar()">REGISTRAR</button>
+            </form>
+        </div>
+    </body>
+</html>
+
