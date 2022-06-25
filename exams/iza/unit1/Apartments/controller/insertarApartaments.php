@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT']."//Apartments/db/db.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/Apartments/db/db.php";
 $id = $_POST['id'];
 $descripcion = $_POST['descripcion'];
 $numero = $_POST['numero'];
