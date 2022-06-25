@@ -8,7 +8,7 @@ header("RewriteCond %{REQUEST_FILENAME} !-f");
 header("RewriteRule ^([^\.]+)$ $1.php [NC,L]");
 
 // include database file
-include_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-WEB-TI-5450/exams/cardenas/db/mongodb_config.php";
+include_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-WEB-TI-5450/exams/cardenas/unit1/CardenasComputers/db/mongodb_config.php";
 
 $dbname = 'bestCPU';
 $collection = 'computers';
