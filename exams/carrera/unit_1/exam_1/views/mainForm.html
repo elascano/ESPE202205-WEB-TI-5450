@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/app.js"></script>
+    <title>Cell Phone Inventory Entry</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault()">
+        <div class="container">
+            <label>Device Type</label>
+            <select name="devices" id="devices">
+                <option value="cellphone">Cell-Phone</option>
+                <option value="computer">Computer</option>
+                <option value="console">Game Console</option>
+                <option value="printer">Printer</option>
+              </select>
+            <br>
+            <label>Brand</label>
+            <input type="text" name="brand" id="brand">
+            <label>Serial</label>
+            <input type="text" name="serial" id="serial">
+            <label>Condition</label>
+            <input type="text" name="condition" id="condition">
+            <label>Price</label>
+            <input type="text" name="price" id="price">
+            <button type="submit" onclick="entryDevice()">Entry Device</button>
+
+        </div>
+    </form>
+</body>
+</html>
