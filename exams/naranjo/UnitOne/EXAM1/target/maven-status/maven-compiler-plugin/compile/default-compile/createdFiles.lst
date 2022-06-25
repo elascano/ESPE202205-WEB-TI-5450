@@ -1,0 +1,5 @@
+Rest/TrucksResource.class
+com/mycompany/exam1/JakartaRestConfiguration.class
+ConnectionBD/ConnectionMongoDB.class
+Model/Trucks.class
+com/mycompany/exam1/resources/JakartaEE8Resource.class
