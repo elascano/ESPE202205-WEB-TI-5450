@@ -1,0 +1,48 @@
+*{
+    /*Margen Pagina Web*/
+    margin: 10px;
+    padding: 10px;
+}
+
+#ContornoTabla{
+    font-family: cursive;
+    font-size: 20pt;
+    width: 70%;
+    margin: auto;
+}
+
+header{
+    background:burlywood;
+    margin: 10px;
+    padding: 10px;
+}
+
+#divSolicitaDatos{
+    border-bottom: 5px dotted grey;
+}
+
+#DatosEnPantalla table tr th{
+    background:  aquamarine;
+    color: black;
+}
+
+#DatosEnPantalla table tr th{
+    margin: 10px;
+    padding: 10px;
+}
+
+#DatosEnPantalla table tr td{
+    margin: 10px;
+    padding: 10px;
+}
+
+caption{
+    background: cadetblue;
+    color: white;
+}
+
+#TablaSoliDatos tr td{
+   margin: 10px;
+   padding: 10px;
+}
+
