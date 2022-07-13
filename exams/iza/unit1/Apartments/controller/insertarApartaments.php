@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT']."/unit1/Apartments/db/db.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-WEB-TI-5450/exams/iza/unit1/Apartments/db/db.php";
 $id = $_POST['id'];
 $descripcion = $_POST['descripcion'];
 $numero = $_POST['numero'];
