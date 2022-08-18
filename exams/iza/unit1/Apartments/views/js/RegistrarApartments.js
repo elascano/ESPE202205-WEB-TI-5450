@@ -4,7 +4,7 @@ function registrar(){
     var numero=$('#txtnumero').val();
     var localizacion =$('#txtlocalizacion ').val();
     
-    var url = "http://localhost/ESPE202205-WEB-TI-5450/exams/iza/unit1/Apartments/controller/insertarApartaments.php"
+    var url = "/ESPE202205-WEB-TI-5450/exams/iza/unit1/Apartments/controller/insertarApartaments.php"
 
 $.ajax({
     type:"POST",
@@ -12,13 +12,11 @@ $.ajax({
     data: {'id':id,'descripcion':descripcion,'numero':numero,'localizacion':localizacion},
     success: function (response)
     {
+        alert(response);
         if(response=='registrado'){
-            $('anymodal').modal('show');  
-            console.log(response) 
-            alert('registrado con exito');       
+            $('anymodal').modal('show');          
         }else{
-            console.log(response)
-             alert('Error de registro');
+        alert('Error en el Registro');
     }
     }
     
