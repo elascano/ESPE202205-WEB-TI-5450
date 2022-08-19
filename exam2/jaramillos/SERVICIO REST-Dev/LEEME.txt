@@ -1,0 +1,19 @@
+
+Este ejemplo pertenece al artículo "Cómo crear una API REST de ejemplo para pruebas y depuración en menos de 3 minutos"
+que puedes encontrar en: https://www.campusmvp.es/recursos/post/como-crear-una-api-rest-de-ejemplo-para-pruebas-y-depuracion-en-menos-de-3-minutos.aspx
+
+Para restaurar los paquetes np y poner el servicio en funcionamiento debes escribir:
+
+npm i
+
+desde una línea de comandos (Windows, Linux o macOS) ubicada en la misma carpeta donde copies los archivos.
+
+
+                                      __  ____      _______          
+                                     |  \/  \ \    / /  __ \         
+   ___ __ _ _ __ ___  _ __  _   _ ___| \  / |\ \  / /| |__) |__  ___ 
+  / __/ _` | '_ ` _ \| '_ \| | | / __| |\/| | \ \/ / |  ___/ _ \/ __|
+ | (_| (_| | | | | | | |_) | |_| \__ \ |  | |  \  /  | |_ |  __/\__ \
+  \___\__,_|_| |_| |_| .__/ \__,_|___/_|  |_|   \/   |_(_) \___||___/
+                     | |                                             
+                     |_|                                             
