@@ -1,0 +1,23 @@
+{{#if customers}}
+  <table class="table table-bordered table-hover table-dark">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>age</th>
+        <th>moneySpent</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each customers}}
+        <tr>
+          <td>{{ID}}</td>
+          <td>{{name}}</td>
+          <td>{{age}}</td>
+          <td>{{moneySpent}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+{{/if}}
