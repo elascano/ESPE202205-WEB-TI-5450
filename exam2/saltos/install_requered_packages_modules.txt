@@ -1,0 +1,7 @@
+npm install @mui/x-data-grid
+npm install mongoose
+npm install react-router-dom
+npm install install @mui/material @emotion/react @emotion/styled
+npm install express mongoose nodemon dotenv
+npm install -g nodemon
+npm install dotenv

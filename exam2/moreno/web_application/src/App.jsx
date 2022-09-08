@@ -1,9 +1,9 @@
-import CustomerCrud from "./components/CustomerCrud";
+import CustomerTable from "./components/CustomerTable";
 
 function App() {
   return (
     <div className="App">
-      <CustomerCrud />
+      <CustomerTable />
     </div>
   );
 }
